@@ -1,0 +1,12 @@
+
+mophones_dbt_project:
+  outputs:
+    dev:
+      catalog: dbt_mophones_dev
+      host: dbc-9b6ae4e0-b3ea.cloud.databricks.com
+      http_path: /sql/1.0/warehouses/7c9aa6ff4700180d
+      schema: default
+      threads: 1
+      token: your_databricks_token_here
+      type: databricks
+  target: dev

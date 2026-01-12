@@ -1,0 +1,19 @@
+name: 'mophones_credit'
+version: '1.0.0'
+profile: 'mophones_dbt_project'  # Replace with your dbt profile name
+config-version: 2
+
+model-paths: ['models']
+macro-paths: ['macros']
+seed-paths: ['seeds']
+analysis-paths: ['analysis']
+test-paths: ['tests']
+
+models:
+  mophones_credit:
+    staging:
+      +schema: 'staging'
+      +materialized: view
+    marts:
+      +schema: 'marts'
+      +materialized: table

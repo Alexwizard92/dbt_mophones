@@ -1,0 +1,4 @@
+customer_id,first_name,last_name,dob,gender,region,plan_type,device_model,start_date,duration_months,income_salary,income_business,income_other
+1,John,Doe,1985-05-15,M,North,Postpaid,iPhone 12,2020-01-01,24,50000,10000,2000
+2,Jane,Smith,1990-08-20,F,South,Prepaid,Samsung Galaxy S21,2021-03-15,18,45000,0,5000
+3,Bob,Johnson,1975-12-10,M,East,Postpaid,Google Pixel 5,2019-07-01,36,60000,15000,3000

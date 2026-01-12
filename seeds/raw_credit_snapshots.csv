@@ -1,0 +1,7 @@
+reporting_date,customer_id,account_status,balance,principal_outstanding,interest_outstanding,arrears_amount,dpd,payment_amount,default_flag
+2025-01-01,1,current,10000,8000,2000,0,0,500,0
+2025-01-01,2,current,8000,7000,1000,0,0,400,0
+2025-01-01,3,arrears,12000,9000,3000,500,30,600,0
+2025-03-30,1,current,9500,7500,2000,0,0,500,0
+2025-03-30,2,current,7600,6600,1000,0,0,400,0
+2025-03-30,3,default,13000,8000,5000,2000,90,0,1

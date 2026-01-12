@@ -1,0 +1,30 @@
+version: 2
+
+seeds:
+  - name: raw_customers
+    description: 'Raw customer master data (seed placeholder).'
+    columns:
+      - name: customer_id
+        tests: [not_null, unique]
+      - name: dob
+        tests: [not_null]
+      - name: duration_months
+        tests: [not_null]
+  - name: raw_credit_snapshots
+    description: 'Credit portfolio point-in-time snapshots (seed placeholder).'
+    columns:
+      - name: reporting_date
+        tests: [not_null]
+      - name: customer_id
+        tests: [not_null]
+      - name: account_status
+        tests:
+          - accepted_values:
+              values: ['current','arrears','default','closed']
+  - name: raw_nps
+    description: 'NPS survey results (seed placeholder).'
+    columns:
+      - name: nps_score
+        tests:
+          - accepted_values:
+              values: [0,1,2,3,4,5,6,7,8,9,10]

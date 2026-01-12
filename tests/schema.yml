@@ -1,0 +1,33 @@
+version: 2
+
+models:
+  - name: credit_customer_snapshot
+    description: 'Joined snapshot per customer per reporting_date.'
+    columns:
+      - name: customer_id
+        tests: [not_null]
+      - name: reporting_date
+        tests: [not_null]
+      - name: account_status
+        tests:
+          - accepted_values:
+              values: ['current','arrears','default','closed']
+  - name: portfolio_metrics
+    description: 'Portfolio-level KPIs per reporting_date.'
+    columns:
+      - name: reporting_date
+        tests: [not_null]
+  - name: segment_metrics
+    description: 'Segment-level KPIs.'
+    columns:
+      - name: reporting_date
+        tests: [not_null]
+  - name: nps_linkage
+    description: 'NPS linked to credit outcomes.'
+    columns:
+      - name: customer_id
+        tests: [not_null]
+      - name: nps_score
+        tests:
+          - accepted_values:
+              values: [0,1,2,3,4,5,6,7,8,9,10]
